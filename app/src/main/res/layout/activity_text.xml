@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="#0099ff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#0099FF"
+            android:text="发 送 文 本"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/bt_sendText"
+            android:onClick="sendTextOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff"
+            android:text=" 发送"
+            android:textColor="#777777"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/et_sendText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_toLeftOf="@id/bt_sendText"
+            android:background="@null"
+            android:hint=" 请输入..."
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

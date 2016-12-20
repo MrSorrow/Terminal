@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.ping.terminal.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="#0099ff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_connectState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="未连接"
+            android:textColor="#ffffff"
+            android:textSize="21dp" />
+
+        <Button
+            android:id="@+id/bt_conn"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="282dp"
+            android:background="#00000000"
+            android:onClick="scanDevice"
+            android:text="连接"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/settings"
+            android:onClick="settings" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/ibt_sendChar"
+                android:layout_width="150dp"
+                android:layout_height="57dp"
+                android:background="@drawable/ic_char"
+                android:onClick="sendChar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/ibt_sendText"
+                android:layout_width="150dp"
+                android:layout_height="57dp"
+                android:background="@drawable/ic_text"
+                android:onClick="sendText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/ibt_sendCharImage"
+                android:layout_width="150dp"
+                android:layout_height="57dp"
+                android:background="@drawable/ic_charimage"
+                android:onClick="sendCharImage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/ibt_receiveFigure"
+                android:layout_width="150dp"
+                android:layout_height="57dp"
+                android:background="@drawable/ic_figure"
+                android:onClick="receiveFigure" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:visibility="gone"
+                android:id="@+id/ibt_receiveWave"
+                android:layout_width="150dp"
+                android:layout_height="57dp"
+                android:background="@drawable/ic_wave"
+                android:onClick="receiveWave" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:visibility="gone"
+                android:id="@+id/ibt_receivePicture"
+                android:layout_width="150dp"
+                android:layout_height="57dp"
+                android:background="@drawable/ic_picture"
+                android:onClick="receivePicture" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

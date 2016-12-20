@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customcharbt_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="格式："
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_styleChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/style_string"
+                android:text="字符"
+                android:textSize="18dp"
+                android:textColor="#000000"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/style_hex"
+                android:text="十六进制"
+                android:textSize="18dp"
+                android:textColor="#000000"/>
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮名称："
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/et_btName"
+            android:layout_marginLeft="5dp"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送内容："
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/et_btContent"
+            android:layout_marginLeft="5dp"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+</TableLayout>

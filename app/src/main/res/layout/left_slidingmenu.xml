@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:text="用户设置区域："
+            android:textColor="#808069"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/fileopen" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:onClick="bt_openSetting"
+                android:text="打开配置文件"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/filesave" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:onClick="bt_saveSetting"
+                android:text="保存配置文件"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="54dp"
+            android:text="添加按钮区域："
+            android:textColor="#808069"
+            android:textSize="18dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮1"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_1"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt1"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb1On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮2"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_2"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt2"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb2On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮3"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_3"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt3"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb3On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮4"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_4"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt4"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb4On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮5"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_5"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt5"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb5On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮6"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_6"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt6"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb6On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮7"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_7"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt7"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb7On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮8"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_8"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt8"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb8On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮9"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_9"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt9"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb9On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_bt10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:text="按钮10"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_10"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/tv_bt10"
+                        android:background="@drawable/selector_butn_toggle"
+                        android:checked="false"
+                        android:onClick="tb10On"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

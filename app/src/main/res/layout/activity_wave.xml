@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="#0099ff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#0099FF"
+            android:text="波 形 绘 制"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SurfaceView
+            android:id="@+id/sv_wave"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_recCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="waiting check..."
+                    android:textColor="#809080"
+                    android:gravity="center"/>
+                <Button
+                    android:onClick="recCheck"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="check"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:onClick="show"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="show"/>
+                <Button
+                    android:onClick="stopWave"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="stop"/>
+                <Button
+                    android:onClick="clearWave"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="clear"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
